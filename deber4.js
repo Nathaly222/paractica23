@@ -4,9 +4,11 @@ function validarvehicle(currentYear = 2023) {
         make: 'Audi',
         model: 'R8',
         color: 'negro',
-        year: '2010',
-        licencePlate: 'ABC-456'
+        year: prompt("Ingrese year"),
+        licencePlate: 'ABC-456',
     }
+
+    alert(vehicle.make +' '+ vehicle.model +' ' + vehicle.color +' ' + vehicle.year +' ' + vehicle.licencePlate);
 
     if((currentYear-vehicle.year) < 10){
         alert(Boolean(true))
@@ -16,7 +18,8 @@ function validarvehicle(currentYear = 2023) {
     else{
         alert(Boolean(false))
         return Boolean(false)
-    }
+     }
 }
+validarvehicle();
 
-validarvehicle(vehicle);
+
